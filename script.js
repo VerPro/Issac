@@ -1,31 +1,20 @@
 'use strict';
-// robůtek Issac
-//přeložit proměnné do aj
 //Nechat vyskočit varovné okénko, pokud user nezadává number
-let cisloNaKtereMyslim = Math.round(Math.random() * 100);
-let cislo = Number(prompt('Uhádni, na které číslo od 0 do 100 myslím'));
 
-if (cislo === cisloNaKtereMyslim) {
-  console.log('Ano, myslím na číslo ' + cisloNaKtereMyslim + '!');
-} else {
-  console.log(
-    'Ne, toto není číslo, na které myslím. Myslím na číslo ' +
-      cisloNaKtereMyslim,
-  );
-}
+const buttonGuessElm = document.querySelector('#buttonGuess');
+const resultElm = document.querySelector('result');
 
-/*Hádací stroj SWITCH 
+let numberIssac = Math.round(Math.random() * 100);
+let numberUser = document.querySelector('#inputGuessNumber');
 
-let cislo_na_ktere_myslim =  Math.round(Math.random()*100);
-let cislo=Number(prompt("Uhádni, na které číslo od 0 do 100 myslím"));
+const guessNumber = () => {
+  if (numberIssac === numberUser) {
+    console.log(`Ano, myslím na číslo ${numberIssac}!`);
+  } else {
+    console.log(
+      `Ne, toto není číslo, na které myslím. Myslím na číslo ${numberIssac}.`,
+    );
+  }
+};
 
-switch(cislo){
-  case(cislo_na_ktere_myslim):
-  console.log("Ano, myslím na číslo "+cislo_na_ktere_myslim+"!")
-  break;
-
-
-default:
-  console.log("Ne, toto není číslo, na které myslím. Myslím na číslo "+cislo_na_ktere_myslim)
-}
-*/
+buttonGuessElm.addEventListener('click', guessNumber);
