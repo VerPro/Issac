@@ -5,33 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Robůtek Issac</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <header>
-    <h1>Ahoj, já jsem Issac!</h1>
-    <p class="intro">
-      Jsem robůtek a vznikl jsem jako první výsledek pokusů s Javascriptem mojí tvůrkyně. Je to se mnou docela jednoduché. Umím jen jednu věc: <br>
-      Můžeme si společně zahrát hru na hádání čísel. <br>
-      Já si budu myslet číslo od 0 do 100 a ty můžeš zkusit uhádout, na které číslo myslím. Pojď to zkusit!
-    </p>
+      <h1>Ahoj, já jsem Issac!</h1>
+      <p>Jsem robůtek a vznikl jsem jako první výsledek pokusů s Javascriptem mojí tvůrkyně. Je to se mnou docela jednoduché. Umím jen jednu věc: <br>
+      Můžeme si společně zahrát hru na hádání čísel.</p>
+      <p>Já si budu myslet číslo od 0 do 100 a ty můžeš zkusit uhádout, na které číslo myslím. Jdeš do toho?</p> 
 
     </header>
 
     <section>
-      <label for="guessNumber">Tak schválně! Na které číslo myslím?</label>
-      <input id = "inputGuessNumber"type="number" name="guessNumber">
-      <button id = "buttonGuess" type="submit">OK</button>
-      <p class="result"></p>
+      <div class="form">
+        <label for="guessNumber">Tak schválně! Na které číslo myslím?</label>
+        <input id = "inputGuessNumber" type="number" name="guessNumber">
+        <button id = "buttonGuess" type="submit">OK</button>
+        <p class="result"></p>
 
+        <div id="again">
+          
+        </div>
+
+        <img src="images/issac-removebg-preview.png" alt="Robůtek Issac">
+      </div>
     </section>
+
+    
 
     <footer>
       <p class="year">2021</p>
       <p class="author">VerPro</p>
-      <img src="" alt="Github - logo"></img>
-      <img src="" alt="LinkedIn - logo"></img>
+      <a href="https://github.com/VerPro"><img src="images/GitHub-Mark-64px.png" alt="Github - logo"></img></a>
+      <a href="https://www.linkedin.com/in/vprokupkova-cz/"><img src="images/LI-In-64.png" alt="LinkedIn - logo"></img></a>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
