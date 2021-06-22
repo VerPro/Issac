@@ -7,7 +7,7 @@
     <title>Robůtek Issac</title>
     <link rel="shortcut icon" type= 'img/png'href="images/icon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -22,14 +22,13 @@
     <section>
       <div class="form">
         <label for="guessNumber">Tak schválně! Na které číslo myslím?</label>
-        <input id = "inputGuessNumber" type="number" name="guessNumber">
+        <input id = "inputGuessNumber" type="number" name="guessNumber" min="0" max="100">
         <button id = "buttonGuess" type="submit">OK</button>
-        <p class="result"></p>
+        <div class="resultBox">
+          <p class="result"></p>
 
-        <div id="again">
-          
+          <div id="again"></div>
         </div>
-
         <img src="images/issac-removebg-preview.png" alt="Robůtek Issac">
       </div>
     </section>
